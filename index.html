@@ -2,139 +2,232 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Atul Pandey | Developer Portfolio</title>
-  <link rel="stylesheet" href="style.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atul Pandey | Matrix Portfolio</title>
+  <meta name="description" content="Portfolio of Atul Pandey — Data Scientist, ML Engineer & Web Developer. IIT Madras student specializing in analytics, machine learning, and full-stack development." />
+  <meta property="og:title" content="Atul Pandey | Developer Portfolio" />
+  <meta property="og:description" content="Data Science · Machine Learning · Web Development" />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-<header class="fade-in">
-  <h1>Atul Pandey</h1>
-  <p class="tagline">
-    Data Analyst • Data Science Student @ IIT Madras • Web Developer
-  </p>
-  <p class="scroll-hint">↓ Scroll to explore</p>
-</header>
+<canvas id="matrix-rain"></canvas>
 
-<section class="reveal">
-  <h2>About Me</h2>
-  <p>
-    I am a <strong>Data Science student at IIT Madras</strong> with hands-on
-    experience in <strong>data analytics, ETL pipelines, and web development</strong>.
-    I have worked across multiple internships where I handled real-world datasets,
-    automated workflows, and delivered insights to support business decisions.
-  </p>
-  <p>
-    I enjoy transforming raw data into meaningful insights and building
-    clean, developer-friendly applications using Python and modern web technologies.
-  </p>
-</section>
+<div class="scanline-overlay"></div>
 
-<section class="reveal">
-  <h2>Technical Skills</h2>
-  <div class="skills-grid">
-    <div>
-      <h3>Data & Analytics</h3>
-      <p>Python, SQL, ETL, Data Scraping, Predictive Modeling, Data Analysis</p>
-    </div>
-    <div>
-      <h3>Web Development</h3>
-      <p>Flask, HTML, CSS, Bootstrap, REST APIs</p>
-    </div>
-    <div>
-      <h3>Tools</h3>
-      <p>Git, GitHub, Excel, MS Office</p>
-    </div>
-  </div>
-</section>
+<div class="content-wrap">
 
-<section class="reveal">
-  <h2>Projects</h2>
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">[ ATUL ]</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
-  <div class="project-card">
-    <h3>Hospital Management System</h3>
-    <p class="tech">Flask · SQLAlchemy · Bootstrap</p>
-    <p>
-      Developed a full-stack web application to digitize hospital operations,
-      manage patient records, and centralize administrative workflows.
-      Improved data accuracy and reduced manual errors using a database-driven design.
+  <header id="hero">
+    <h1 class="hero-name" data-text="ATUL PANDEY">ATUL PANDEY</h1>
+    <p class="hero-tagline">
+      <span id="typed-text"></span><span class="typing-cursor"></span>
     </p>
-    <a
-      href="https://github.com/22f2000145/hospital-management-system-v1"
-      target="_blank"
-      class="project-link"
-    >
-      🔗 View on GitHub
-    </a>
-  </div>
+    <p class="hero-subtitle">// IIT Madras · Data Science · Machine Learning</p>
 
-  <div class="project-card">
-    <h3>Operational Efficiency Optimization (Capstone)</h3>
-    <p class="tech">Python · Data Analysis · Forecasting</p>
-    <p>
-      Analyzed sales, inventory, and cost data to identify reasons for stagnant profits.
-      Discovered utilization gaps and seasonal trends, and proposed data-driven
-      strategies for demand forecasting and cost optimization.
-    </p>
-    <a
-      href="https://github.com/22f2000145/Capstone_project"
-      target="_blank"
-      class="project-link"
-    >
-      🔗 View on GitHub
-    </a>
-  </div>
-</section>
+    <div class="scroll-indicator">↓ SCROLL TO EXPLORE ↓</div>
+  </header>
 
-<section class="reveal">
-  <h2>Experience</h2>
-  <ul class="experience">
-    <li>
-      <strong>Data Scraping & ETL Intern</strong> – Vanel Tech India Pvt. Ltd.<br/>
-      Automated data extraction and ETL pipelines, ensured data confidentiality,
-      and prepared analytical reports for internal teams.
-    </li>
+  <section id="about" class="reveal">
+    <h2 class="section-title">About_Me</h2>
+    <div class="section-divider"></div>
+    <div class="about-content glass-card">
+      <p>
+        I am a <strong>Data Science student at IIT Madras</strong> with hands-on
+        experience in <strong>data analytics, machine learning, ETL pipelines, and web development</strong>.
+        I have worked across multiple internships where I handled real-world datasets,
+        automated workflows, and delivered insights to support business decisions.
+      </p>
+      <p>
+        I enjoy transforming raw data into meaningful insights and building
+        clean, developer-friendly applications using Python and modern web technologies.
+        I believe in the power of data to unlock hidden patterns — much like seeing through the Matrix.
+      </p>
+    </div>
+  </section>
 
-    <li>
-      <strong>Data Analytics Intern</strong> – Eat English<br/>
-      Tracked student engagement metrics, analyzed learning patterns,
-      and supported customized learning path generation.
-    </li>
+  <section id="skills" class="reveal">
+    <h2 class="section-title">Skills</h2>
+    <div class="section-divider"></div>
+    <div class="skills-grid">
+      <div class="glass-card skill-card">
+        <span class="skill-icon">🧠</span>
+        <h3>Machine Learning</h3>
+        <p>LightGBM, scikit-learn, TF-IDF, Feature Engineering, Classification, NLP</p>
+      </div>
+      <div class="glass-card skill-card">
+        <span class="skill-icon">📊</span>
+        <h3>Data & Analytics</h3>
+        <p>Python, SQL, ETL, Data Scraping, Predictive Modeling, Data Analysis</p>
+      </div>
+      <div class="glass-card skill-card">
+        <span class="skill-icon">🌐</span>
+        <h3>Web Development</h3>
+        <p>Flask, HTML, CSS, Bootstrap, REST APIs, JavaScript</p>
+      </div>
+      <div class="glass-card skill-card">
+        <span class="skill-icon">⚙️</span>
+        <h3>Tools & DevOps</h3>
+        <p>Git, GitHub, Excel, MS Office, VS Code, Jupyter</p>
+      </div>
+    </div>
+  </section>
 
-    <li>
-      <strong>Data Analytics Intern</strong> – College Dunia<br/>
-      Built predictive models and analyzed trends to identify opportunities
-      for operational and process improvements.
-    </li>
+  <section id="projects" class="reveal">
+    <h2 class="section-title">Projects</h2>
+    <div class="section-divider"></div>
+    <div class="projects-grid">
 
-    <li>
-      <strong>Data Analytics Intern (Remote)</strong> – Al Shajarah, Kuwait<br/>
-      Collected and analyzed data from multiple sources and prepared reports
-      to support data-driven decision-making.
-    </li>
+      <div class="glass-card project-card">
+        <div class="project-header">
+          <h3>🧠 Comment Category Prediction</h3>
+          <span class="project-badge">Machine Learning</span>
+        </div>
+        <p class="project-tech">Python · LightGBM · scikit-learn · TF-IDF · pandas</p>
+        <p class="project-desc">
+          End-to-end ML pipeline for multi-class text classification on ~198K rows.
+          Engineered features including log transforms, vote ratios, temporal features,
+          and word/character TF-IDF n-grams. Achieved <strong>Macro F1 Score of 0.83187</strong>
+          using LightGBM, tackling severe class imbalance (55% vs 4%) with mixed text
+          and numerical data.
+        </p>
+        <div class="project-stats">
+          <span class="stat">🏆 F1: 0.83187</span>
+          <span class="stat">📁 198K Rows</span>
+          <span class="stat">🤖 LightGBM</span>
+        </div>
+        <a
+          href="https://github.com/22f2000145/Comment-Category-Prediction-using-ML"
+          target="_blank"
+          class="project-link"
+        >
+          ⟩ View on GitHub
+        </a>
+      </div>
 
-    <li>
-      <strong>QA Intern (Remote)</strong> – Course Hero<br/>
-      Performed quality assurance on educational content, identified bugs,
-      and collaborated with cross-functional teams to improve platform reliability.
-    </li>
-  </ul>
-</section>
+      <div class="glass-card project-card">
+        <div class="project-header">
+          <h3>🏥 Hospital Management System</h3>
+          <span class="project-badge">Full Stack</span>
+        </div>
+        <p class="project-tech">Flask · SQLAlchemy · Bootstrap</p>
+        <p class="project-desc">
+          Developed a full-stack web application to digitize hospital operations,
+          manage patient records, and centralize administrative workflows.
+          Improved data accuracy and reduced manual errors using a database-driven design.
+        </p>
+        <a
+          href="https://github.com/22f2000145/hospital-management-system-v1"
+          target="_blank"
+          class="project-link"
+        >
+          ⟩ View on GitHub
+        </a>
+      </div>
 
-<section class="reveal">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:atul1226@hotmail.com">atul1226@hotmail.com</a></p>
-  <p>
-    GitHub:
-    <a href="https://github.com/22f2000145" target="_blank">
-      github.com/22f2000145
-    </a>
-  </p>
-</section>
+      <div class="glass-card project-card">
+        <div class="project-header">
+          <h3>📊 Operational Efficiency Optimization</h3>
+          <span class="project-badge">Data Analytics</span>
+        </div>
+        <p class="project-tech">Python · Data Analysis · Forecasting</p>
+        <p class="project-desc">
+          Analyzed sales, inventory, and cost data to identify reasons for stagnant profits.
+          Discovered utilization gaps and seasonal trends, and proposed data-driven
+          strategies for demand forecasting and cost optimization.
+        </p>
+        <a
+          href="https://github.com/22f2000145/Capstone_project"
+          target="_blank"
+          class="project-link"
+        >
+          ⟩ View on GitHub
+        </a>
+      </div>
 
-<footer>
-  <p>© 2026 Atul Pandey</p>
-</footer>
+    </div>
+  </section>
+
+  <section id="experience" class="reveal">
+    <h2 class="section-title">Experience</h2>
+    <div class="section-divider"></div>
+    <ul class="timeline">
+      <li>
+        <strong>Data Scraping & ETL Intern</strong>
+        <span class="company"> — Vanel Tech India Pvt. Ltd.</span>
+        <p class="exp-desc">
+          Automated data extraction and ETL pipelines, ensured data confidentiality,
+          and prepared analytical reports for internal teams.
+        </p>
+      </li>
+      <li>
+        <strong>Data Analytics Intern</strong>
+        <span class="company"> — Eat English</span>
+        <p class="exp-desc">
+          Tracked student engagement metrics, analyzed learning patterns,
+          and supported customized learning path generation.
+        </p>
+      </li>
+      <li>
+        <strong>Data Analytics Intern</strong>
+        <span class="company"> — College Dunia</span>
+        <p class="exp-desc">
+          Built predictive models and analyzed trends to identify opportunities
+          for operational and process improvements.
+        </p>
+      </li>
+      <li>
+        <strong>Data Analytics Intern (Remote)</strong>
+        <span class="company"> — Al Shajarah, Kuwait</span>
+        <p class="exp-desc">
+          Collected and analyzed data from multiple sources and prepared reports
+          to support data-driven decision-making.
+        </p>
+      </li>
+      <li>
+        <strong>QA Intern (Remote)</strong>
+        <span class="company"> — Course Hero</span>
+        <p class="exp-desc">
+          Performed quality assurance on educational content, identified bugs,
+          and collaborated with cross-functional teams to improve platform reliability.
+        </p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2 class="section-title">Contact</h2>
+    <div class="section-divider"></div>
+    <div class="contact-links">
+      <a href="mailto:atul1226@hotmail.com" class="contact-btn">
+        ✉ atul1226@hotmail.com
+      </a>
+      <a href="https://github.com/22f2000145" target="_blank" class="contact-btn">
+        ⟩ github.com/22f2000145
+      </a>
+      <a href="Atul_resume_BSC_march_26.pdf" download class="resume-btn" id="resume-download">
+        ⬇ Download Resume
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Atul Pandey · Built with <span class="heart">♥</span> and code</p>
+  </footer>
+
+</div>
 
 <script src="script.js"></script>
 </body>
